@@ -468,9 +468,15 @@ h1 em {
 
 .ra-list li {
   display: grid;
-  grid-template-columns: 10px 1fr;
+  grid-template-columns: 10px minmax(0, 1fr);
   gap: 12px;
   align-items: start;
+}
+
+.ra-list li p {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
 }
 
 .ra-list li::before {
