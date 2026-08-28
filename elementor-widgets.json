@@ -1,0 +1,38 @@
+{
+  "purpose": "Cartographie des blocs HTML vers des widgets Elementor, pour reconstruire ensuite le site dans WordPress.",
+  "theme": {
+    "colors": {
+      "ink": "#0B0B0B",
+      "paper": "#F4F4EF",
+      "accent": "#E4F04A",
+      "accentInk": "#101400"
+    },
+    "radius": "22px",
+    "fonts": "Plus Jakarta Sans"
+  },
+  "templates": {
+    "header": [
+      { "widget": "theme-site-logo", "selector": ".brand" },
+      { "widget": "nav-menu", "selector": ".nav" },
+      { "widget": "button", "selector": ".header-cta .btn" }
+    ],
+    "footer": [
+      { "widget": "theme-site-logo", "selector": ".footer-brand" },
+      { "widget": "text-editor", "selector": ".footer-brand p" },
+      { "widget": "image", "note": "Badge Qualiopi obligatoire", "selector": ".qualiopi img" },
+      { "widget": "nav-menu", "selector": ".footer-links" },
+      { "widget": "social-icons", "selector": "[data-el-widget='social-icons']" }
+    ]
+  },
+  "pages": {
+    "index.html": [
+      { "section": "hero", "widgets": ["heading", "text-editor", "button", "counter"] },
+      { "section": "demenagement", "widgets": ["alert"] },
+      { "section": "catalogue", "widgets": ["heading", "image-box", "button"] },
+      { "section": "realite-augmentee", "widgets": ["heading", "text-editor", "icon-list", "button"] },
+      { "section": "loi", "widgets": ["heading", "tabs"] },
+      { "section": "directeur", "widgets": ["image", "heading", "testimonial", "icon-list", "button"] },
+      { "section": "cta", "widgets": ["call-to-action"] }
+    ]
+  }
+}
