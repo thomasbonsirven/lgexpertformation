@@ -273,6 +273,13 @@ h1 em {
   margin-bottom: 28px;
 }
 
+.copy {
+  font-size: 1.12rem;
+  color: var(--ink);
+  max-width: 38rem;
+  margin-bottom: 28px;
+}
+
 .hero .lead,
 .page-hero .lead,
 .section.dark .lead {
@@ -390,13 +397,15 @@ h1 em {
   color: var(--ink);
 }
 
-.section.muted h2 {
+.section.muted h2,
+.section.muted .lead,
+.section.muted .copy,
+.section.muted .section-head p {
   color: var(--ink);
 }
 
-.section.muted .section-head p,
-.section.muted .lead {
-  color: var(--muted);
+.section.muted .kicker {
+  color: var(--ink);
 }
 
 .cards-3,
