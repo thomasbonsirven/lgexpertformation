@@ -268,9 +268,15 @@ h1 em {
 
 .lead {
   font-size: 1.12rem;
-  color: #d5d5cc;
+  color: var(--muted);
   max-width: 38rem;
   margin-bottom: 28px;
+}
+
+.hero .lead,
+.page-hero .lead,
+.section.dark .lead {
+  color: #d5d5cc;
 }
 
 .hero-actions {
@@ -375,13 +381,22 @@ h1 em {
   color: var(--white);
 }
 
-.section.dark .section-head p,
-.section.muted .section-head p {
+.section.dark .section-head p {
   color: #b7b7ae;
 }
 
 .section.muted {
   background: var(--paper-2);
+  color: var(--ink);
+}
+
+.section.muted h2 {
+  color: var(--ink);
+}
+
+.section.muted .section-head p,
+.section.muted .lead {
+  color: var(--muted);
 }
 
 .cards-3,
